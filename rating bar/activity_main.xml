@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:text="Skills Progress Tracker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Course Name -->
+    <EditText
+        android:id="@+id/etCourse"
+        android:hint="Enter Course Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Skills % -->
+    <EditText
+        android:id="@+id/etProgress"
+        android:hint="Enter Skills Learned (%)"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/btnUpdate"
+        android:text="Update Progress"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Rating -->
+    <TextView
+        android:text="Give Feedback Rating"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Submit Feedback -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="Submit Feedback"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Result -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</ScrollView>

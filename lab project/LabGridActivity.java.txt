@@ -1,0 +1,53 @@
+package com.example.lab;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class LabGridActivity extends AppCompatActivity {
+
+    ImageView lab1, lab2, lab3, lab4, lab5, lab6,
+            lab7, lab8, lab9, lab10, lab11, lab12;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_lab_grid);
+
+        lab1 = findViewById(R.id.lab1);
+        lab2 = findViewById(R.id.lab2);
+        lab3 = findViewById(R.id.lab3);
+        lab4 = findViewById(R.id.lab4);
+        lab5 = findViewById(R.id.lab5);
+        lab6 = findViewById(R.id.lab6);
+        lab7 = findViewById(R.id.lab7);
+        lab8 = findViewById(R.id.lab8);
+        lab9 = findViewById(R.id.lab9);
+        lab10 = findViewById(R.id.lab10);
+        lab11 = findViewById(R.id.lab11);
+        lab12 = findViewById(R.id.lab12);
+
+        lab1.setOnClickListener(v -> openLab("Lab 1", R.drawable.lab1));
+        lab2.setOnClickListener(v -> openLab("Lab 2", R.drawable.lab2));
+        lab3.setOnClickListener(v -> openLab("Lab 3", R.drawable.lab3));
+        lab4.setOnClickListener(v -> openLab("Lab 4", R.drawable.lab4));
+        lab5.setOnClickListener(v -> openLab("Lab 5", R.drawable.lab5));
+        lab6.setOnClickListener(v -> openLab("Lab 6", R.drawable.lab6));
+        lab7.setOnClickListener(v -> openLab("Lab 7", R.drawable.lab7));
+        lab8.setOnClickListener(v -> openLab("Lab 8", R.drawable.lab8));
+        lab9.setOnClickListener(v -> openLab("Lab 9", R.drawable.lab9));
+        lab10.setOnClickListener(v -> openLab("Lab 10", R.drawable.lab10));
+        lab11.setOnClickListener(v -> openLab("Lab 11", R.drawable.lab11));
+        lab12.setOnClickListener(v -> openLab("Lab 12", R.drawable.lab12));
+    }
+
+    private void openLab(String labName, int image) {
+
+        Intent intent = new Intent(LabGridActivity.this, LabDetailActivity.class);
+        intent.putExtra("labName", labName);
+        intent.putExtra("labImage", image);
+        startActivity(intent);
+    }
+}
