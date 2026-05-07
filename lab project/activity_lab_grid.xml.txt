@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:padding="16dp"
+    android:useDefaultMargins="true">
+
+    <ImageView
+        android:id="@+id/lab1"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab1"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab2"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab2"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab3"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab3"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab4"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab4"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab5"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab5"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab6"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab6"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab7"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab7"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab8"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab8"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab9"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab9"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab10"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab10"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab11"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab11"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/lab12"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/lab12"
+        android:scaleType="fitCenter"/>
+
+</GridLayout>

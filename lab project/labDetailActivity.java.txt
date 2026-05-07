@@ -1,0 +1,92 @@
+package com.example.lab;
+
+import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class LabDetailActivity extends AppCompatActivity {
+
+    ImageView labImage;
+    TextView labTitle, labDescription;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_lab_detail);
+
+        labImage = findViewById(R.id.labImage);
+        labTitle = findViewById(R.id.labTitle);
+        labDescription = findViewById(R.id.labDescription);
+
+        int img = getIntent().getIntExtra("labImage", 0);
+        String name = getIntent().getStringExtra("labName");
+
+        labImage.setImageResource(img);
+        labTitle.setText(name);
+
+        if(name.equals("Lab 1")) {
+
+            labDescription.setText("Java Programming Lab\n\n" +
+                    "The JAVA Programming lab is used to perform practicals of Advance C Programming, " +
+                    "Data Structures, Information Security and Compiler Construction.");
+
+        } else if(name.equals("Lab 2")) {
+
+            labDescription.setText("Advanced Database System Lab\n\n" +
+                    "The Advanced Database System lab is used to perform Project I, Project II, " +
+                    "System Programming and Database Engineering practicals.");
+
+        } else if(name.equals("Lab 3")) {
+
+            labDescription.setText("Database Engineering Lab\n\n" +
+                    "The Database Engineering lab is used to perform practicals of Database Engineering, " +
+                    "Web Technology, Java Programming, Domain specific mini project and Computer Network Laboratory. " +
+                    "The software installed includes Ubuntu OS, MySQL, MongoDB, GCC, g++ and Open JDK packages.");
+
+        } else if(name.equals("Lab 4")) {
+
+            labDescription.setText("R Programming Lab\n\n" +
+                    "The R Programming lab is used to perform practicals of Data Structures, Web Technology, " +
+                    "Java Programming and CNN. The software installed includes Ubuntu OS, RStudio, GCC, g++ and Open JDK packages.");
+
+        } else if(name.equals("Lab 5")) {
+
+            labDescription.setText("Project Lab\n\n" +
+                    "The Project lab is used to perform practicals of Project I, Project II, Advance C Programming, " +
+                    "System Programming and Database Engineering. The software installed includes Ubuntu OS, MySQL, " +
+                    "Atom editor, Brackets editor, GCC, g++ and OpenJDK packages.");
+
+        } else if(name.equals("Lab 6")) {
+
+            labDescription.setText("Research Lab\n\n" +
+                    "The Research Lab is used to perform practicals of Project I/II, Data Structures, Java Programming, " +
+                    "Operating System and Domain specific mini project. The software installed includes Ubuntu OS, " +
+                    "Atom editor, Brackets editor, PyCharm editor, MySQL, MongoDB, GCC and Open JDK packages.");
+
+        } else if(name.equals("Lab 7")) {
+
+            labDescription.setText("Web Technology Lab\n\n" +
+                    "The Web Technology lab is used to perform practicals of Web Technology, Advance C Programming, " +
+                    "Java Programming, CNN and Domain specific mini project. The software installed includes Ubuntu " +
+                    "and Windows OS, XAMPP server, WampServer, Atom editor, Brackets editor, GCC and Open JDK packages.");
+
+        } else if(name.equals("Lab 8")) {
+
+            labDescription.setText("Python Programming Lab\n\n" +
+                    "The Python Programming lab is used to perform practicals of Compiler Construction, BDA, " +
+                    "Operating System and Database Engineering. The software installed includes Ubuntu OS, " +
+                    "PyCharm editor, Atom editor, Brackets editor, GCC, g++ and Open JDK packages.");
+
+        } else if(name.equals("Lab 9")) {
+
+            labDescription.setText("C Programming Lab\n\n" +
+                    "The C Programming lab is used to perform practicals of C language. " +
+                    "The software installed includes Ubuntu OS, GCC and g++.");
+
+
+
+        }
+    }
+}
